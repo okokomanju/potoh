@@ -1,0 +1,156 @@
+@charset "UTF-8";
+
+*  {
+  margin: 0;
+  padding: 0;
+  list-style: none;
+  text-decoration: none;
+  box-sizing: border-box;
+}
+  
+  body {
+  font-family: Arial, sans-serif;
+  margin: 0;
+  padding: 0;
+  text-align: center;
+  background-color: rgb(255, 255, 255);
+}
+
+
+  header {
+   background-color: rgb(255, 255, 255);
+    color: rgb(149, 77, 88);
+    padding: 10px 0;
+    margin-bottom: 90px;
+  }
+  
+  h1 {
+    font-family: "Limelight", cursive;
+    margin: 0;
+    font-size: 40px;
+    margin-left: -850px;
+    margin-top: -3.3em;
+  }
+
+  .small-lemon-image {
+    width: 50px;
+    display: brock;
+    margin-top: 2em;
+    margin-left: -69em;
+  }
+
+  .paper-image{
+    width: 600px; 
+    display: brock;
+    margin-top: -1em;
+  }
+
+  nav ul {
+    padding-bottom: 1rem;
+    margin: 0;
+    text-align: center;
+  } 
+  
+  nav ul li {
+    display: inline-block;
+    margin: 0 25px;
+    margin-bottom: 10px;
+  }
+  
+  nav ul li a {
+    font-size: 20px;
+    font-weight: bold;
+    transition-duration: .5s;
+    font-family: "Limelight", cursive;
+    color: rgb(255, 79, 105);
+  }
+  
+  nav ul li a:hover{
+    color: rgb(187, 245, 124);
+  }
+  .slideshow-container {
+    position: relative;
+    max-width: 1000px;
+    margin: auto;
+  }
+  
+  .slide {
+    display: none;
+  }
+  
+  img {
+    width: 100%;
+    height: auto;
+  }
+  
+  footer {
+    position: fixed;
+    bottom: 1rem;
+    right: 1rem;
+    z-index: 100;
+  }
+  
+  .swiper {
+    width: 100%;
+    height: 100%;
+  }
+  
+  .swiper-slide {
+    text-align: center;
+    font-size: 2rem;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+  
+  .swiper-slide img {
+    display: block;
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+  }
+  
+  img {
+    width: 100%;
+    height: auto;
+    padding-bottom: 5rem;
+  }
+
+  .matrix .bg-wrap,
+.matrix .bg-wrap .inn {
+  font-family: "Hachi Maru Pop", cursive;
+  display: block;
+  padding-bottom: 1rem;
+}
+ 
+.matrix .bg-wrap {
+  overflow: hidden;
+  opacity: 0;
+}
+ 
+.matrix .bg-wrap + .bg-wrap {
+  margin-top: 10px;
+}
+ 
+.matrix .bg-wrap .inn.large {
+  font-size: 36px;
+  font-weight: bold;
+}
+.matrix .bg-wrap .inn.small {
+  font-size: 15px;
+}
+ 
+.matrix .bg-wrap .inn {
+  opacity: 0;
+  transform: matrix(1, 0, 0, 1, 0, 100);
+  transition: 1.2s cubic-bezier(0.22, 1, 0.36, 1);
+}
+ 
+.matrix.is-animated .bg-wrap {
+  opacity: 1;
+}
+ 
+.matrix.is-animated .bg-wrap .inn {
+  opacity: 1;
+  transform: matrix(1, 0, 0, 1, 0, 0);
+}
